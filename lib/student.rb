@@ -22,13 +22,13 @@ DB[:conn].execute(sql)
 end
   def self.drop_table
     sql = "DROP TABLE IF EXISTS students"
-        DB[:conn].execute(sql) 
+        DB[:conn].execute(sql)
   end
   def save
-if self.id 
+if self.id
   self.update
 else
-  sql<<-SQL 
+  sql<<-SQL
   INSERT INTO students (name,grade)
   VALUES (?,?)
   SQL
