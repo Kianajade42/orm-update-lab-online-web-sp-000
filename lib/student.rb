@@ -18,17 +18,17 @@ grade TEXT
 
   )
 end
-  def .drop_table
+  def drop_table
 
   end
   def save
 
   end
-   def .create
+   def create
 student=
    end
 
-   def .new_from_db(row)
+   def new_from_db(row)
 
    end
 
